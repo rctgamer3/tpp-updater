@@ -17,6 +17,21 @@
         $('#main_content').headsmart()
       })
     </script>
+    <script>
+      function install (aEvent) {
+        var params = {
+          "Foo": { URL: aEvent.target.href,
+          IconURL: aEvent.target.getAttribute("data-iconURL"),
+          Hash: aEvent.target.getAttribute("hash"),
+          toString: function () {
+            return this.URL;
+          }
+          }
+        };
+        InstallTrigger.install(params);
+        return false;
+      }
+    </script>
     <title>Twitch Plays Pokémon Updater by rctgamer3</title>
   </head>
 
@@ -37,7 +52,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a href="https://github.com/rctgamer3/tpp-updater/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/rctgamer3/tpp-updater/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+          <a href="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);">Install add-on</a>
         </span>
       </section>
 
@@ -56,11 +71,7 @@
 <p>Steps to install (until i implement a fancy install button here):</p>
 
 <ol>
-<li><a href="https://github.com/rctgamer3/tpp-updater/raw/master/tppupdater.xpi">Download the latest version</a></li>
-<li>Save it to your computer</li>
-<li>Open the Add-ons Manager</li>
-<li>Click the cog button and select "Install Add-on From File"</li>
-<li>Select the .xpi you downloaded in step 1.</li>
+<li>Click <a href="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);">CLICK HERE</a>
 <li>Click the install button in the installation pop-up</li>
 <li>Restart Firefox</li>
 <li>????</li>
