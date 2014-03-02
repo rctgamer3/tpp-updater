@@ -1,0 +1,2 @@
+content	tppupdater content/
+overlay chrome://browser/content/browser.xul chrome://tppupdater/content/overlay.xul
