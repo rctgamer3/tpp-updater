@@ -10,7 +10,7 @@
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>26.0</em:minVersion>
+                <em:minVersion>22.0</em:minVersion>
                 <em:maxVersion>30.*</em:maxVersion>
                 <em:updateLink>https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi</em:updateLink>
               </RDF:Description>
