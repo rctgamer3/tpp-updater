@@ -6,13 +6,14 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>0.0.5</em:version>
+            <em:version>0.0.6</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>22.0</em:minVersion>
                 <em:maxVersion>30.*</em:maxVersion>
                 <em:updateLink>https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi</em:updateLink>
+                <em:updateInfoURL>https://rctgamer3.github.io/tpp-updater/changelog006.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>

@@ -5,7 +5,7 @@
 	<em:id>{566d6b8d-3ad6-4d77-bc08-474a0da057d2}</em:id>
 	<em:name>Twitch Plays Pokemon Updater</em:name>
 	<em:description>Displays live updates from Reddit as notifications</em:description>
-	<em:version>0.0.5</em:version>
+	<em:version>0.0.6</em:version>
 	<em:creator>rctgamer3</em:creator>
 	<em:homepageURL>http://www.twitch.tv/twitchplayspokemon</em:homepageURL>
 	<em:type>2</em:type>
