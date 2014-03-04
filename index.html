@@ -22,7 +22,7 @@
         for (var a = aEvent.target; a.href === undefined;) a = a.parentNode;
         var params = {
           "Foo": {
-            URL: aEvent.target.href,
+            URL: aEvent.target.getAttribute("data-xpiURL"),
             IconURL: aEvent.target.getAttribute("data-iconURL"),
             Hash: aEvent.target.getAttribute("data-hash"),
             toString: function () {
@@ -54,7 +54,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a class="zip" href="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);">Install <em>add-on</em></a>
+          <a class="zip" href="#" data-xpiURL="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);">Install <em>add-on</em></a>
           <a class="tgz" href="https://github.com/rctgamer3/tpp-updater">View the source<em>on GitHub</em></a>
         </span>
       </section>
@@ -79,7 +79,9 @@
             <li>Restart Firefox</li>
             <li>????</li>
             <li>PROFIT!</li>
-         </ol><p><strong>Known issue:</strong> Due to Firefox limitations (nsIAlertsService) notifications will only be visible for ~4s. This behaviour cannot be changed.</p>
+         </ol>
+         <i>If you get a "Save File" window instead of the installation pop-up, please save the .xpi to your computer and drag/drop it to the Add-ons Manager.</i>
+         <p><strong>Known issue:</strong> Due to Firefox limitations (nsIAlertsService) notifications will only be visible for ~4s. This behaviour cannot be changed.</p>
       </section>
 
       <footer>
