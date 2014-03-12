@@ -31,6 +31,7 @@
           }
         };
         InstallTrigger.install(params);
+        ga('send','event','button','click','InstallButton');
         return false;
       }
     </script>
@@ -54,7 +55,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a class="zip" href="#" data-xpiURL="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);ga('send','event','button','click','InstallButton');">Install <em>add-on</em></a>
+          <a class="zip" href="#" data-xpiURL="https://raw.github.com/rctgamer3/tpp-updater/master/tppupdater.xpi" data-iconURL="https://raw.github.com/rctgamer3/tpp-updater/master/icon.png" onClick="return install(event);">Install <em>add-on</em></a>
           <a class="tgz" href="https://github.com/rctgamer3/tpp-updater">View the source<em>on GitHub</em></a>
         </span>
       </section>
